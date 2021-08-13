@@ -59,9 +59,6 @@ body{
 
 
 @media screen and (max-width: 460px) {
-    /* body{
-        background-color: red;
-    } */
 
     .front-bg{
         /* position: absolute;
@@ -202,7 +199,6 @@ body{
     .top-info-box img{
         width: 64px;
         margin-bottom: 10px;
-        /* box-shadow: 10px 10px 19px -6px rgba(0,0,0,0.59); */
     }
 
     /* ======================================================================== */
@@ -296,6 +292,7 @@ body{
         position: relative;
         width: 100%;
         height: max-content;
+        padding-bottom: 50px;
         display: flex;
         justify-content: space-around;
         flex-direction: row;
@@ -309,14 +306,11 @@ body{
         margin: 50px 20px;
         background-color: grey;
         border-radius: 0 0 20px 20px;
-        /* box-shadow: 10px 9px 16px -6px rgba(0,0,0,0.79); */
     }
 
     .concert-info{
         width: 100%;
         height: max-content;
-        /* height: 40%; */
-        /* background-color: rgba(0, 0, 255, 0.5); */
         background:linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url('/public/image/assets/blur.png');
         border-radius: 0 0 20px 20px;
         display: flex;
@@ -458,12 +452,77 @@ body{
 
     /* ======================================================================== */
 
+    .reviews{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .reviews h2,
+    .reviews h3{
+        font-family: 'Viga', sans-serif;
+        text-align: center;
+    }
+
     .client-img{
+        width: 128px;
+        border-radius: 50%;
+    }
+    .border-1{
+        border:6px ridge;
+    }
+    .border-2{
+        border:6px groove;
+    }
+
+    .star>img{
         width: 32px;
     }
 
-    .star img{
-        width: 32px;
+    .client-container{
+        width: 80%;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 30px;
+        border-radius: 20px;
+    }
+
+    .cc-bg-45{
+        background: rgb(244,244,244);
+        background: linear-gradient(45deg, rgba(244,244,244,0.55) 0%, rgba(195,195,195,0.55) 0%, rgba(244,244,244,1) 83%);
+    }
+    .cc-bg-220{
+        background: rgb(244,244,244);
+        background: linear-gradient(220deg, rgba(244,244,244,0.55) 0%, rgba(195,195,195,0.55) 0%, rgba(244,244,244,1) 83%);
+    }
+
+    .client-container .name{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    .separation{
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
+
+    .comment{
+        margin: 15px 0;
+        text-align: justify;
+    }
+
+    .star{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: 15px 0;
     }
 
 }
