@@ -16,6 +16,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
     /*buttons*/
 @import url('https://fonts.googleapis.com/css2?family=Allerta&display=swap');
+/*Footer*/
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
 
 
 *{
@@ -523,6 +527,126 @@ body{
         justify-content: space-evenly;
         flex-wrap: wrap;
         margin: 15px 0;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;      /*altura cuestionable*/
+        /* font-family: 'MonteCarlo', cursive; */
+        /* font-family: 'Patua One', cursive; */
+        color: #fff;
+    }
+
+    .foot-1{
+        width: 100%;
+        height: 70%;    
+        background-color: #3D3D3D;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .companies{
+        width: 100%;
+        height: 55%;
+        text-align: center;
+    }
+
+    .companies h3{
+        margin-top: 35px;
+        font-family: 'Patua One', cursive;
+        font-weight: lighter;
+        font-style: italic;
+    }
+
+    .companies img{
+        width: 256px;
+        /* height: 20%; */
+        margin: 15px 0;
+    }
+
+    .foot-1 hr{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .last-chance{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        padding: 40px;
+    }
+
+    .last-chance img{
+        width: 186px;
+        border: 3px solid #fff;
+    }
+
+    .last-text{
+        margin: 10px 0;
+        text-align: center;
+        font-size: 1.85rem;
+        font-family: 'Ranchers', cursive;
+    }
+    .last-body{
+        margin: 10px 0;
+        font-family: 'Style Script', cursive;
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: lighter;
+    }
+
+    .last-chance a{
+        margin: 10px 0 25px 0;
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+
+    .foot-2{
+        width: 100%;
+        height: 30%;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .last-info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .last-info ul{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 20px 85px;
+    }
+
+    .last-info ul li{
+        list-style: none;
+        margin: 10px 15px;
+    }
+
+    .last-info ul li a{
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: #fff;
+    }
+
+    .foot-2 .foot-2-text{
+        padding: 30px 20px;
+        text-align: center;
+        font-family: 'MonteCarlo', cursive;
     }
 
 }
