@@ -6,8 +6,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Buenard:wght@700&display=swap');
 /*Text-presentation*/
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight&display=swap');
+/*Top-Description*/
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
 /*Concerts*/
 @import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+    /**/
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+    /**/ 
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+    /*buttons*/
+@import url('https://fonts.googleapis.com/css2?family=Allerta&display=swap');
+
 
 *{
     margin: 0;
@@ -18,7 +27,7 @@
 body{
     background-color: #F4F4F4;
     position: relative;
-    height: 500vh;
+    height: max-content;
     /* height: max-content; */
     z-index: 0;
 }
@@ -36,6 +45,8 @@ body{
     transition: ease 600ms;
     z-index: 1;
 }
+
+
 
 
 @media screen and (max-width: 768px) {
@@ -79,7 +90,7 @@ body{
     }
 
     .toggle.active{
-        background: #ffffffb0;
+        background: #7a7a7ab0;
         color: #000;
     }
 
@@ -107,7 +118,7 @@ body{
         min-height: 100vh;
         background-color: rgba(0, 0, 0, 0.85);
         transition: ease-in-out 600ms;
-        z-index: 30;
+        z-index: 50;
     }
 
     .show{
@@ -183,9 +194,15 @@ body{
         margin: 20px 40px;
     }
 
+    .top-info-box p{
+        font-family: 'Style Script', cursive;
+        font-size: 1.5rem;
+    }
+
     .top-info-box img{
         width: 64px;
         margin-bottom: 10px;
+        /* box-shadow: 10px 10px 19px -6px rgba(0,0,0,0.59); */
     }
 
     /* ======================================================================== */
@@ -226,11 +243,11 @@ body{
         position: relative;
     }
 
-    .img-1{
+    .p-img-1{
         background: url(/public/image/assets/presentation/min-presentacion1.png);
     }
 
-    .img-2{
+    .p-img-2{
         background: url(/public/image/assets/presentation/min-presentacion2.png);
         top: 71%;
     }
@@ -249,6 +266,7 @@ body{
 
     .concerts{
         width: 100%;
+        height: max-content;
         margin-top: 60px;
         background-color: #dddddd;
     }
@@ -258,6 +276,194 @@ body{
         text-align: center;
         font-family: 'Viga', sans-serif;
         padding: 5px;  
+    }
+    
+    .name{
+        font-family: 'Zen Tokyo Zoo', cursive;
+        font-size: 1.6rem;
+    }
+
+    .date{
+        font-style: italic;
+    }
+
+    .ubication{
+        margin-top: 5px;
+        font-weight: bold;
+    }
+
+    .concert-container{
+        position: relative;
+        width: 100%;
+        height: max-content;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: 1;
+    }
+
+    .concert-box{
+        width: 200px;
+        height: 300px;
+        margin: 50px 20px;
+        background-color: grey;
+        border-radius: 0 0 20px 20px;
+        /* box-shadow: 10px 9px 16px -6px rgba(0,0,0,0.79); */
+    }
+
+    .concert-info{
+        width: 100%;
+        height: max-content;
+        /* height: 40%; */
+        /* background-color: rgba(0, 0, 255, 0.5); */
+        background:linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url('/public/image/assets/blur.png');
+        border-radius: 0 0 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    .name,
+    .date,
+    .ubication,
+    .btn-info-buy{
+        text-align: center;
+    }
+
+    button{
+        background-color: rgba(255, 255, 255, 0.05);
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        transition: ease 200ms;
+        font-family: 'Allerta', sans-serif;
+        box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);        
+    }
+
+    button:active{
+        transition: 0.2s all;
+        transform: translateY(4px);
+    }
+
+    .info{
+        background-color: rgba(214, 212, 69, 0.1);;
+        border-bottom: 3px solid rgb(212, 209, 0);
+    }
+    .buy{
+        background-color: rgba(0, 201, 0, 0.1);
+        border-bottom: 3px solid rgb(2, 119, 2);
+    }
+
+    .btn-info-buy{
+        flex-basis: 60%;
+        display: flex;
+        flex-direction: column;
+        margin: 10px auto;
+    }
+    .info{
+        margin-bottom: 5px;
+    }
+
+    
+    .img-1{
+        background: url(/public/image/assets/concerts/msc1.png);
+    }
+    .img-2{
+        background: url(/public/image/assets/concerts/msc2.png);
+    }
+    .img-3 {
+        background: url(/public/image/assets/concerts/msc3.png);
+    }
+    .img-4 {
+        background: url(/public/image/assets/concerts/msc4.png);
+    }
+    .img-5 {
+        background: url(/public/image/assets/concerts/msc5.png);
+    }
+    .img-6 {
+        background: url(/public/image/assets/concerts/msc6.png);
+    }
+    .img-7 {
+        background: url(/public/image/assets/concerts/msc7.png);
+    }
+    .img-8 {
+        background: url(/public/image/assets/concerts/msc8.png);
+    }
+    .img-9 {
+        background: url(/public/image/assets/concerts/msc9.png);
+    }
+    .img-10 {
+        background: url(/public/image/assets/concerts/msc10.png);
+    }
+
+    .nat-1{
+        background: url(/public/image/assets/flags/077-netherlands.png);
+    }
+    .nat-2{
+        background: url(/public/image/assets/flags/186-united\ states.png);
+    }
+    .nat-3 {
+        background: url(/public/image/assets/flags/197-france.png);
+    }
+    .nat-4 {
+        background: url(/public/image/assets/flags/066-canada.png);
+    }
+    .nat-5 {
+        background: url(/public/image/assets/flags/033-mexico.png);
+    }
+    .nat-6 {
+        background: url(/public/image/assets/flags/066-canada.png);
+    }
+    .nat-7 {
+        background: url(/public/image/assets/flags/132-singapore.png);
+    }
+    .nat-8 {
+        background: url(/public/image/assets/flags/205-norway.png);
+    }
+    .nat-9 {
+        background: url(/public/image/assets/flags/208-germany.png);
+    }
+    .nat-10 {
+        background: url(/public/image/assets/flags/044-russia.png);
+    }
+
+
+    .concert-info,
+    .concert-img,
+    .nation{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .bio{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+        margin: 10px 0;
+    }
+
+    .concert-img {
+        width: 100%;
+        height: 60%;
+    }
+    
+    .nation{
+        margin-right: 15px;
+        width: 24px;
+        height: 24px;
+    }
+
+    /* ======================================================================== */
+
+    .client-img{
+        width: 32px;
+    }
+
+    .star img{
+        width: 32px;
     }
 
 }
