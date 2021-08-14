@@ -31,8 +31,8 @@
 body{
     background-color: #F4F4F4;
     position: relative;
+    /* height: 1200vh; */
     height: max-content;
-    /* height: max-content; */
     z-index: 0;
 }
 
@@ -53,11 +53,6 @@ body{
 
 
 @media screen and (max-width: 1366px) {
-    
-}
-
-
-@media screen and (max-width: 768px) {
     .front-bg{
         background: url(/public/image/assets/front/horizontal.png);
         background-position: center;
@@ -66,8 +61,7 @@ body{
     }
 
     /* ======================================================================== */
-
-    .nav{
+.nav{
         top: 0px;
         position: sticky;
         width: 100%;
@@ -96,13 +90,13 @@ body{
     .nav ul li a{
         color: #FFF;
         text-decoration: none;
-        font-size: 1rem;
+        font-size: 1.45rem;
         padding: 0 7px 10px 7px;
         font-family: 'ZCOOL XiaoWei', serif;
     }
 
     .nav ul li:hover{
-        transform: scale(1.25);
+        transform: scale(1.45);
         border-bottom: 2px solid #fff;
         transition: ease-in-out 200ms;
     }
@@ -123,7 +117,7 @@ body{
         color: #fff;
         font-family: 'Buenard', serif;
     }
-
+    
     /* ======================================================================== */
 
     .top-info{
@@ -173,23 +167,23 @@ body{
         flex-direction: row;
     }
     
+    .p-img-1{
+        background: url(/public/image/assets/presentation/o-presentacion1.png);
+    }
+
+    .p-img-2{
+        background: url(/public/image/assets/presentation/o-presentacion2.png);
+        top: 0;
+    }
+
     .bg-pair{
         width: 100%;
         /* height: 100%; */
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .p-img-1{
-        background: url(/public/image/assets/presentation/presentacion1.png);
-    }
-
-    .p-img-2{
-        background: url(/public/image/assets/presentation/presentacion2.png);
-        top: 0;
     }
 
     .img-pair p{
@@ -215,7 +209,7 @@ body{
         padding: 15px 0;
         margin-top: 1px;
         margin-bottom: 40px;
-        font-size: 1.5rem;
+        font-size: 2.25rem;
     }
 
     /* ======================================================================== */
@@ -235,7 +229,7 @@ body{
         font-family: 'Viga', sans-serif;
         padding: 5px;  
     }
-    
+
     .name{
         font-family: 'Zen Tokyo Zoo', cursive;
         font-size: 1.6rem;
@@ -321,7 +315,7 @@ body{
         margin-bottom: 5px;
     }
 
-    
+
     .img-1{
         background: url(/public/image/assets/concerts/msc1.png);
     }
@@ -404,13 +398,13 @@ body{
         width: 100%;
         height: 60%;
     }
-    
+
     .nation{
         margin-right: 15px;
         width: 24px;
         height: 24px;
     }
-    
+
     /* ======================================================================== */
 
     .reviews{
@@ -453,14 +447,14 @@ body{
     }
 
     .client-container{
-        width: 250px;
+        width: 475px;
         margin: 20px 10px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 20px 30px;
-        border-radius: 20px;
+        border-radius: 20px;transition: ease 400ms;
     }
 
     .cc-bg-45{
@@ -497,6 +491,149 @@ body{
         margin: 15px 0;
     }
 
+    /* ======================================================================== */
+
+    footer{
+        position: relative;
+        top: 100vh;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        color: #fff;
+    }
+
+    .foot-1{
+        width: 100%;
+        height: 70%;    
+        background-color: #3D3D3D;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .companies{
+        width: 100%;
+        height: 55%;
+        text-align: center;
+    }
+
+    .companies h3{
+        margin-top: 35px;
+        font-family: 'Patua One', cursive;
+        font-weight: lighter;
+        font-style: italic;
+    }
+
+    .companies img{
+        width: 366px;
+        /* height: 20%; */
+        margin: 15px 0;
+    }
+
+    .foot-1 hr{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .last-chance{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .last-chance img{
+        width: 256px;
+        border: 3px solid #fff;
+    }
+
+    .last-text{
+        margin: 10px 0;
+        text-align: center;
+        font-size: 2.65rem;
+        font-family: 'Ranchers', cursive;
+    }
+    .last-body{
+        margin: 10px 0;
+        font-family: 'Style Script', cursive;
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: lighter;
+    }
+
+    .last-chance a{
+        margin: 10px 0 25px 0;
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+
+    .foot-2{
+        width: 100%;
+        height: 30%;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .last-info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .last-info ul{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 20px 85px;
+    }
+
+    .last-info ul li{
+        list-style: none;
+        margin: 10px 15px;
+    }
+
+    .last-info ul li a{
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: #fff;
+    }
+
+    .foot-2 .foot-2-text{
+        padding: 30px 20px;
+        text-align: center;
+        font-size: 1.65rem;
+        font-family: 'MonteCarlo', cursive;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .nav ul li a{
+        font-size: 1rem;
+    }
+
+    .nav ul li:hover{
+        transform: scale(1.25);
+    }
+
+    /* ======================================================================== */
+
+    .client-container{
+        width: 250px;
+    }
 
     /* ======================================================================== */
 
@@ -506,9 +643,7 @@ body{
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: max-content;      /*altura cuestionable*/
-        /* font-family: 'MonteCarlo', cursive; */
-        /* font-family: 'Patua One', cursive; */
+        height: max-content;
         color: #fff;
     }
 
