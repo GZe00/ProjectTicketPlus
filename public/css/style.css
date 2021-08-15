@@ -31,6 +31,7 @@
 body{
     position: relative;
     height: max-content;
+    background-color: #F4F4F4;
     z-index: 0;
 }
 
@@ -457,11 +458,11 @@ button:active{
 
 .cc-bg-45{
     background: rgb(244,244,244);
-    background: linear-gradient(45deg, rgba(244,244,244,0.55) 0%, rgba(195,195,195,0.55) 0%, rgba(244,244,244,1) 83%);
+    background: linear-gradient(220deg, rgba(244,244,244,0.7) 38%, rgba(219,219,219,0.7) 100%);
 }
 .cc-bg-220{
     background: rgb(244,244,244);
-    background: linear-gradient(220deg, rgba(244,244,244,0.55) 0%, rgba(195,195,195,0.55) 0%, rgba(244,244,244,1) 83%);
+    background: linear-gradient(45deg, rgba(244,244,244,0.7) 38%, rgba(219,219,219,0.7) 100%);
 }
 
 .client-container .name{
